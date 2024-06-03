@@ -193,7 +193,7 @@ function generate(address: string, isSixPoint = false): Circle[] {
   );
 }
 
-interface GGXIconProps {
+interface GGxIconProps {
   account: string;
   size: number;
   className?: string;
@@ -227,8 +227,8 @@ function renderShadowIcon(account: string) {
   }
 }
 
-export class GGXIcon extends React.Component<GGXIconProps> {
-  public shouldComponentUpdate(nextProps: GGXIconProps) {
+export class GGxIcon extends React.Component<GGxIconProps> {
+  public shouldComponentUpdate(nextProps: GGxIconProps) {
     return (
       this.props.account !== nextProps.account ||
       this.props.size !== nextProps.size
