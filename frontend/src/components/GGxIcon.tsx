@@ -193,7 +193,7 @@ function generate(address: string, isSixPoint = false): Circle[] {
   );
 }
 
-interface PolkadotIconProps {
+interface GGxIconProps {
   account: string;
   size: number;
   className?: string;
@@ -227,8 +227,8 @@ function renderShadowIcon(account: string) {
   }
 }
 
-export class PolkadotIcon extends React.Component<PolkadotIconProps> {
-  public shouldComponentUpdate(nextProps: PolkadotIconProps) {
+export class GGxIcon extends React.Component<GGxIconProps> {
+  public shouldComponentUpdate(nextProps: GGxIconProps) {
     return (
       this.props.account !== nextProps.account ||
       this.props.size !== nextProps.size
