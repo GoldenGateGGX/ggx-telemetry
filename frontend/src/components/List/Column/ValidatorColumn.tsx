@@ -47,11 +47,7 @@ export class ValidatorColumn extends React.Component<ColumnProps> {
     return (
       <td className="Column" onClick={this.onClick}>
         <Tooltip text={validator} copy={this.onCopy} />
-        <GGxIcon
-          className="Column-validator"
-          account={validator}
-          size={16}
-        />
+        <GGxIcon className="Column-validator" account={validator} size={16} />
       </td>
     );
   }
